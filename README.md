@@ -16,12 +16,21 @@ rojo serve
 
 ## House Build Bubble
 
-In Studio, press Play and walk into the glowing bubble near the spawn point.
-The bubble is replaced by an empty house with a floor, walls, roof, and an open
-doorway facing the spawn. The house is shared by everyone in that server and
+In Studio, press Play and walk into the sparkling bubble with rotating neon rings
+near the spawn point. The bubble is replaced by an empty 48-by-40-stud glass house
+with 18-stud-tall walls, a glass roof, slim metal framing, and an open doorway
+facing the spawn. Glass has a reflective exterior layer that is hidden locally
+when the camera views the inside of each pane, so players can see out from inside
+but cannot see through the glass from outside. The open doorway remains visible.
+The house is shared by everyone in that server and
 resets when a new play session starts. A spawn is created if the place has none.
 
 Adjust the placement and house dimensions using the constants at the top of
 `src/server/HousePlot.luau`.
+
+To check the visuals, enter the house and look through its walls and roof, then
+walk outside and inspect the reflective exterior. In Studio's multiplayer test,
+put one player inside and one outside to check their independent views. Restart
+Play after syncing changes to reset the runtime-built house and bubble.
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
